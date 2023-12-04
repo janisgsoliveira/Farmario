@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE9DD344-913D-402F-9630-56457BE0B0A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>prj_farmario.My.MyApplication</StartupObject>
+    <RootNamespace>prj_farmario</RootNamespace>
+    <AssemblyName>prj_farmario</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>prj_farmario.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>prj_farmario.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Farmario__logo_-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\6UJZE5CVULTCQ9KEEPUF9GRIEKEDDJ\FRAMEWORK VB.NET\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data, Version=5.0.3136.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
+    <Reference Include="Devart.Data.MySql, Version=9.1.151.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\6UJZE5CVULTCQ9KEEPUF9GRIEKEDDJ\FRAMEWORK VB.NET\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="farmarioDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>farmarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="farmarioDataSet.vb">
+      <DependentUpon>farmarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_admin.Designer.vb">
+      <DependentUpon>frm_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_cliente.Designer.vb">
+      <DependentUpon>frm_cadastro_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_produto.Designer.vb">
+      <DependentUpon>frm_cadastro_produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_venda.Designer.vb">
+      <DependentUpon>frm_cadastro_venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_farm.Designer.vb">
+      <DependentUpon>frm_farm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_farm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gerenciar.Designer.vb">
+      <DependentUpon>frm_gerenciar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gerenciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relats.Designer.vb">
+      <DependentUpon>frm_relats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relat_clientes.Designer.vb">
+      <DependentUpon>frm_relat_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relat_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relat_estoque.Designer.vb">
+      <DependentUpon>frm_relat_estoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relat_estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relat_venda.Designer.vb">
+      <DependentUpon>frm_relat_venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relat_venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relat_venda_produto.Designer.vb">
+      <DependentUpon>frm_relat_venda_produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relat_venda_produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo_geral.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frm_operac.Designer.vb">
+      <DependentUpon>frm_operac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_operac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rec_senha.Designer.vb">
+      <DependentUpon>frm_rec_senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rec_senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_admin.resx">
+      <DependentUpon>frm_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_cliente.resx">
+      <DependentUpon>frm_cadastro_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_produto.resx">
+      <DependentUpon>frm_cadastro_produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_venda.resx">
+      <DependentUpon>frm_cadastro_venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_farm.resx">
+      <DependentUpon>frm_farm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gerenciar.resx">
+      <DependentUpon>frm_gerenciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_operac.resx">
+      <DependentUpon>frm_operac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relats.resx">
+      <DependentUpon>frm_relats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relat_clientes.resx">
+      <DependentUpon>frm_relat_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relat_estoque.resx">
+      <DependentUpon>frm_relat_estoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relat_venda.resx">
+      <DependentUpon>frm_relat_venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relat_venda_produto.resx">
+      <DependentUpon>frm_relat_venda_produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rec_senha.resx">
+      <DependentUpon>frm_rec_senha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relat_cliente.rdlc" />
+    <EmbeddedResource Include="relat_estoque.rdlc" />
+    <EmbeddedResource Include="relat_venda.rdlc" />
+    <EmbeddedResource Include="relat_venda_produto.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="farmarioDataSet.xsc">
+      <DependentUpon>farmarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="farmarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>farmarioDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="farmarioDataSet.xss">
+      <DependentUpon>farmarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_clientesTableAdapter.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_innerjoinTableAdapter.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_loginTableAdapter.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_produtosTableAdapter.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_vendasTableAdapter.datasource" />
+    <None Include="My Project\DataSources\prj_farmario.farmarioDataSetTableAdapters.tb_vendas_produtoTableAdapter.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Farmario__logo_-removebg-preview.ico" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
