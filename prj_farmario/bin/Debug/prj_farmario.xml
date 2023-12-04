@@ -1,0 +1,191 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+prj_farmario
+</name>
+</assembly>
+<members>
+<member name="T:prj_farmario.My.Resources.Resources">
+<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
+</summary>
+</member>
+<member name="P:prj_farmario.My.Resources.Resources.ResourceManager">
+<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member>
+<member name="P:prj_farmario.My.Resources.Resources.Culture">
+<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_clientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_loginDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_produtosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendas_produtoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_clientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_loginRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_produtosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendas_produtoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_clientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_loginRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_produtosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendas_produtoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSet.tb_vendaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_clientesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_loginTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_produtosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_vendasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_vendas_produtoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.tb_vendaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(prj_farmario.farmarioDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(prj_farmario.farmarioDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(prj_farmario.farmarioDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.UpdateAll(prj_farmario.farmarioDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:prj_farmario.farmarioDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
